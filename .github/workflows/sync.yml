@@ -7,9 +7,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         - name: Sync
-            uses: repo-sync/github-sync@v2
-            with:
+          uses: repo-sync/github-sync@v2
+          with:
             source_repo: 'https://github.com/TBXark/ChatGPT-Telegram-Workers'
-            target_repo: 'https://github.com/i-kirito/ChatGPT-Telegram-Workers‘
+            target_repo: 'https://github.com/i-kirito/ChatGPT-Telegram-Workers'
             github_token: ${{ secrets.GITHUB_TOKEN }} 
             source_branch: 'master'
